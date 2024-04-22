@@ -1,9 +1,10 @@
 /* Error: Can't find stylesheet to import.
  *   ,
- * 1 | @use "styles" as style
- *   | ^^^^^^^^^^^^^^^^^^^^^^
+ * 1 | @use '@angular/material' as mat
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *   '
- *   colors.sass 1:1  root stylesheet */
+ *   ..\styles.sass 1:1  @use
+ *   colors.sass 1:1     root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"styles\" as style\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   colors.sass 1:1  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use '@angular/material' as mat\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   ..\\styles.sass 1:1  @use\a   colors.sass 1:1     root stylesheet";
 }
